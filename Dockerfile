@@ -15,4 +15,4 @@ ADD . .
 RUN deno cache mod.ts
 
 # Run with environment variable and file read permissions.
-CMD ["run", "--allow-net", "--allow-read", "--allow-env", "main.ts"]
+CMD ["run", "--allow-net", "--allow-read", "--allow-env", "mod.ts"]
