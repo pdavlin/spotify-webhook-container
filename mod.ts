@@ -1,5 +1,7 @@
-import { Application, Router } from "https://deno.land/x/oak/mod.ts";
+import { Application, Router } from "https://deno.land/x/oak@v17.1.3/mod.ts";
 import { getAccessToken } from "./auth.ts";
+
+// rest of your code remains the same
 
 const app = new Application();
 const router = new Router();
