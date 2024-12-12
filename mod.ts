@@ -74,7 +74,7 @@ function stopPolling() {
 }
 
 // WebSocket route
-router.get("/ws", (ctx) => {
+router.get("/v1/spotify-websocket/ws", (ctx) => {
   if (ctx.isUpgradable) {
     const socket = ctx.upgrade();
     connections.add(socket);
