@@ -28,7 +28,7 @@ async function fetchAndBroadcast() {
       const nowPlaying = { track: "", artist: "" };
 
       connections.forEach((socket) => {
-        if (!socket.CLOSED) {
+        if (!socket.isClosed) {
           socket.send(JSON.stringify(nowPlaying));
         }
       });
@@ -46,7 +46,7 @@ async function fetchAndBroadcast() {
       };
 
       connections.forEach((socket) => {
-        if (!socket.CLOSED) {
+        if (!socket.isClosed) {
           socket.send(JSON.stringify(nowPlaying));
         }
       });
